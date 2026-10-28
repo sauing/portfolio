@@ -8,7 +8,7 @@
   const art = document.createElement('div');
   art.className = 'cricket-diagram';
   art.setAttribute('aria-hidden', 'true');
-  art.innerHTML = '<svg viewBox="0 0 360 440" fill="none"><ellipse cx="235" cy="215" rx="205" ry="205"/><ellipse cx="235" cy="215" rx="176" ry="176"/><ellipse class="dashed" cx="235" cy="215" rx="135" ry="135"/><path d="M215 135h40v160h-40zM204 150h62M204 280h62M228 130v25m7-25v25m7-25v25M228 275v25m7-25v25m7-25v25"/><g><circle cx="104" cy="193" r="3"/><circle cx="181" cy="66" r="3"/><circle cx="304" cy="335" r="3"/></g></svg>';
+  art.innerHTML = '<svg viewBox="0 0 470 430" fill="none"><ellipse cx="235" cy="215" rx="205" ry="205"/><ellipse cx="235" cy="215" rx="176" ry="176"/><ellipse class="dashed" cx="235" cy="215" rx="135" ry="135"/><path d="M215 135h40v160h-40zM204 150h62M204 280h62M228 130v25m7-25v25m7-25v25M228 275v25m7-25v25m7-25v25"/><g><circle cx="104" cy="193" r="3"/><circle cx="181" cy="66" r="3"/><circle cx="304" cy="335" r="3"/></g></svg>';
   document.querySelector('.hero-note').prepend(art);
   const thumbs = [
     '<div class="device phone"><div class="device-bar"></div><div class="phone-line"></div><i></i><i></i><i></i><i></i></div>',
