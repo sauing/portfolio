@@ -1,0 +1,28 @@
+/* Header alignment and restored hero portrait. */
+.site-header {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto auto;
+  align-items: center;
+  gap: 32px;
+  min-height: 90px;
+}
+.site-header .brand { font: 700 26px/1.2 Georgia, serif; letter-spacing: -1px; gap: 12px; white-space: nowrap; }
+.site-header .brand-mark { width: 32px; height: 32px; flex-shrink: 0; font: 700 11px/1 Arial, sans-serif; letter-spacing: 0; }
+.site-header nav { display: flex; align-items: center; justify-content: flex-end; gap: 26px; margin: 0; }
+.site-header nav a { font: 700 14px/1.4 Arial, sans-serif; padding: 12px 0; }
+.site-header .header-link { font: 700 12px/1.4 Arial, sans-serif; letter-spacing: 1px; white-space: nowrap; }
+.hero-note { align-items: center; justify-content: center; gap: 14px; padding: 30px; }
+.hero-note .hero-portrait { display: block; position: relative; width: 180px; height: 180px; flex: 0 0 180px; margin: 0 0 6px; border: 5px solid #f7f4e9; border-radius: 50%; overflow: hidden; }
+.hero-note .hero-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hero-note .note-label { position: static; max-width: none; align-self: center; text-align: center; }
+.hero-note strong { align-self: center; max-width: 260px; padding: 0; background: transparent; text-align: center; font-size: 15px; line-height: 1.5; }
+.hero-note .mono { align-self: center; text-align: center; }
+@media (max-width: 760px) {
+  .site-header { grid-template-columns: 1fr auto; gap: 12px 20px; padding-top: 20px; padding-bottom: 14px; }
+  .site-header .brand { font-size: 23px; }
+  .site-header nav { grid-column: 1 / -1; grid-row: 2; justify-content: space-between; gap: 16px; }
+  .site-header .header-link { grid-column: 2; grid-row: 1; }
+  .hero-note { padding: 24px 18px; }
+  .hero-note .hero-portrait { width: 140px; height: 140px; flex-basis: 140px; }
+  .hero-note strong { font-size: 13px; }
+}
